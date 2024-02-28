@@ -1,7 +1,6 @@
-# RGB Led Test on Espressif ESP32-C6 Dev board
+# EInk Display Demo
 
-Note: RGB Led on dev board is on PIN 8, change to correct pin for the PCB (line 8, '#define PIN 8'.)
-
+Note: We can not test this because we don't have the new screen connected yet, but it compiled ok on the c6 dev board
 
 
 1.  Install Arduino IDE https://www.arduino.cc/en/software
@@ -10,15 +9,10 @@ Note: RGB Led on dev board is on PIN 8, change to correct pin for the PCB (line 
 4.  Go to tools > Board > Boards manager
 5.  Search for 'Arduino ESP32 Boards'
 6.  Press on install
-7.  Load Simple LED Control Example
-8.  Install Libraries, for example Adafruit Neopixel 
-9.  Select board (any of the c6 should be fine, I have been testing with the SparkFun ESP32-C6) and your serial port.
-10. Upload code
-11. Press reset button (on unplug / replug)
-12. Enjoy the light show!
+7.  Load GDEY0154D67_Arduino example
+8.  Upload
 
 
-![](rgb_led_demo.gif)
 
 
 

@@ -1,6 +1,8 @@
 # RGB Led Test on Espressif ESP32-C6 Dev board
 
-Note: RGB Led on dev board is on PIN 8, change to correct pin for the PCB (line 8, '#define PIN 8'.
+Note: RGB Led on dev board is on PIN 8, change to correct pin for the PCB (line 8, '#define PIN 8'.)
+
+
 
 1.  Install Arduino IDE https://www.arduino.cc/en/software
 2.  Go to Settings
@@ -14,6 +16,7 @@ Note: RGB Led on dev board is on PIN 8, change to correct pin for the PCB (line 
 10. Upload code
 11. Press reset button (on unplug / replug)
 12. Enjoy the light show!
+
 
 ![](rgb_led_demo.gif)
 

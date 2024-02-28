@@ -15,7 +15,7 @@ Note: RGB Led on dev board is on PIN 8, change to correct pin for the PCB (line 
 11. Press reset button (on unplug / replug)
 12. Enjoy the light show!
 
-![RGB LED Demo](](https://github.com/ambient-works/aw-pcb-firmware-test/blob/main/rgb_led_demo.gif?raw=true)https://github.com/ambient-works/aw-pcb-firmware-test/blob/main/rgb_led_demo.gif?raw=true
-)
+![](rgb_led_demo.gif)
+
 
 

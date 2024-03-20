@@ -5,7 +5,7 @@
  #include <avr/power.h> 
 #endif
 
-#define PIN        8 
+#define PIN        9
 
 #define NUMPIXELS 1
 
@@ -18,26 +18,37 @@ void setup() {
 #endif
 
   pixels.begin(); 
+
+    Serial.begin(9600);
+
 }
 
 void loop() {
+
   pixels.clear(); 
+
   for(int i=0; i<NUMPIXELS; i++) { 
     pixels.setPixelColor(i, pixels.Color(0, 150, 0));
 
-    pixels.show();   
+    pixels.show(); 
+    Serial.println("pixel show");
+  
     delay(2000); 
 
     pixels.clear();
+    Serial.println("pixel clear");
 
     pixels.setPixelColor(i, pixels.Color(150, 0, 0));
 
     pixels.show();  
 
+    Serial.println("pixel show");
+
     delay(2000); 
 
     pixels.clear(); 
-
+    Serial.println("pixel clear");
 
   }
 }
+

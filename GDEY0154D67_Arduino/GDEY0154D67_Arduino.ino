@@ -1,10 +1,13 @@
 #include <SPI.h>
 #include"Ap_29demo.h"
 //IO settings
-int BUSY_Pin = 4; 
-int RES_Pin = 5; 
-int DC_Pin = 6; 
-int CS_Pin = 7; 
+int BUSY_Pin = 5; 
+int RES_Pin = 6; 
+int DC_Pin = 7; 
+int CS_Pin = 8;
+
+#define SCK 10
+#define MOSI 11
 
 #define EPD_W21_CS_0 digitalWrite(CS_Pin,LOW)
 #define EPD_W21_CS_1 digitalWrite(CS_Pin,HIGH)
@@ -53,7 +56,7 @@ void setup() {
    pinMode(CS_Pin, OUTPUT);   
    //SPI
    SPI.beginTransaction(SPISettings(10000000, MSBFIRST, SPI_MODE0)); 
-   SPI.begin ();  
+   SPI.begin (SCK, -1, MOSI, -1);  
 }
 ////////Partial refresh schematic////////////////
 
